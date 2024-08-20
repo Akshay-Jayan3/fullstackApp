@@ -1,3 +1,37 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Define Poppins font */
+@font-face {
+    font-family: 'Poppins';
+    src: url('../assets/fonts/Poppins-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../assets/fonts/Poppins-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Define Nunito font */
+@font-face {
+    font-family: 'Nunito';
+    src: url('../assets/fonts/Nunito-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900; /* Supports font-weight from 100 to 900 */
+    font-style: normal;
+}
+
+body {
+    h1,h2,h3,h4,h5,h6 a {
+        font-family: 'Poppins', sans-serif;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    p,li{
+        font-family: 'Nunito', 'sans-serif';
+    }
+}

@@ -23,8 +23,8 @@ const Links = () => {
 
     ];
   return (
-    <div  className="flex justify-between">{links.map((link,i)=>(
-        <Link href={link.path} key={i}>{link.title}</Link>
+    <div  className="flex gap-4">{links.map((link,i)=>(
+        <Link href={link.path} key={i} className='font-bold'>{link.title}</Link>
     ))}</div>
   )
 }
